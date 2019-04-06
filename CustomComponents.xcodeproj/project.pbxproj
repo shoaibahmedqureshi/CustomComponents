@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0C4A61B0225525050068D133 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61AF225525050068D133 /* AppDelegate.swift */; };
-		0C4A61B2225525050068D133 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61B1225525050068D133 /* ViewController.swift */; };
+		0C4A61B2225525050068D133 /* RestaurantsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61B1225525050068D133 /* RestaurantsListViewController.swift */; };
 		0C4A61B5225525050068D133 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A61B3225525050068D133 /* Main.storyboard */; };
 		0C4A61B72255251F0068D133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A61B62255251F0068D133 /* Assets.xcassets */; };
 		0C4A61BA2255251F0068D133 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A61B82255251F0068D133 /* LaunchScreen.storyboard */; };
 		0C4A61C5225525200068D133 /* CustomComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61C4225525200068D133 /* CustomComponentsTests.swift */; };
 		0C4A61D0225525200068D133 /* CustomComponentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61CF225525200068D133 /* CustomComponentsUITests.swift */; };
+		0C4A61DF22553EB00068D133 /* RestaurantTableViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */; };
+		0C4A61E222553F480068D133 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */; };
+		0C4A61E322553F480068D133 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */; };
+		0CA6396D22559D45003C36BE /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6396C22559D45003C36BE /* RestaurantModel.swift */; };
+		0CA6397022559DD6003C36BE /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6396F22559DD6003C36BE /* BaseModel.swift */; };
+		0CA639762257050A003C36BE /* RestAPIFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6397222570509003C36BE /* RestAPIFacade.swift */; };
+		0CA639772257050A003C36BE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA639732257050A003C36BE /* Constant.swift */; };
+		0CA639782257050A003C36BE /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA639742257050A003C36BE /* WebServiceHandler.swift */; };
+		0CA6397D2257067C003C36BE /* TryCatchHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6397C2257067C003C36BE /* TryCatchHandling.m */; };
+		0CA6397F2257070C003C36BE /* SwiftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6397E2257070C003C36BE /* SwiftData.swift */; };
+		0CA639822257079E003C36BE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA639812257079E003C36BE /* libsqlite3.0.tbd */; };
+		0CA639852257C592003C36BE /* ZomatoResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA639842257C592003C36BE /* ZomatoResModel.swift */; };
+		0CA63989225839E9003C36BE /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA63988225839E9003C36BE /* RestaurantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,7 @@
 /* Begin PBXFileReference section */
 		0C4A61AC225525050068D133 /* CustomComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4A61AF225525050068D133 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C4A61B1225525050068D133 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C4A61B1225525050068D133 /* RestaurantsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListViewController.swift; sourceTree = "<group>"; };
 		0C4A61B4225525050068D133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C4A61B62255251F0068D133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C4A61B92255251F0068D133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +60,21 @@
 		0C4A61CB225525200068D133 /* CustomComponentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomComponentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4A61CF225525200068D133 /* CustomComponentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentsUITests.swift; sourceTree = "<group>"; };
 		0C4A61D1225525200068D133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewControl.swift; sourceTree = "<group>"; };
+		0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		0CA6396C22559D45003C36BE /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		0CA6396F22559DD6003C36BE /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		0CA6397222570509003C36BE /* RestAPIFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIFacade.swift; sourceTree = "<group>"; };
+		0CA639732257050A003C36BE /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0CA639742257050A003C36BE /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		0CA6397A2257067A003C36BE /* CustomComponents-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomComponents-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CA6397B2257067B003C36BE /* TryCatchHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TryCatchHandling.h; sourceTree = "<group>"; };
+		0CA6397C2257067C003C36BE /* TryCatchHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TryCatchHandling.m; sourceTree = "<group>"; };
+		0CA6397E2257070C003C36BE /* SwiftData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftData.swift; sourceTree = "<group>"; };
+		0CA639812257079E003C36BE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0CA639842257C592003C36BE /* ZomatoResModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomatoResModel.swift; sourceTree = "<group>"; };
+		0CA63988225839E9003C36BE /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA639822257079E003C36BE /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +110,7 @@
 				0C4A61C3225525200068D133 /* CustomComponentsTests */,
 				0C4A61CE225525200068D133 /* CustomComponentsUITests */,
 				0C4A61AD225525050068D133 /* Products */,
+				0CA639802257079E003C36BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +127,17 @@
 		0C4A61AE225525050068D133 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				0CA6398A2258429B003C36BE /* Utility */,
+				0CA63987225839B0003C36BE /* ViewModels */,
+				0CA639832257C557003C36BE /* ResModel */,
+				0CA6397122570022003C36BE /* Network */,
+				0CA6396E22559D50003C36BE /* Models */,
+				0CA6396A22557CC0003C36BE /* ViewControllers */,
+				0CA6396922557C9E003C36BE /* Views */,
+				0CA6396822557C67003C36BE /* WetherForecastComponent */,
+				0C4A61DD22553B9C0068D133 /* ResturantListComponent */,
 				0C4A61AF225525050068D133 /* AppDelegate.swift */,
-				0C4A61B1225525050068D133 /* ViewController.swift */,
-				0C4A61B3225525050068D133 /* Main.storyboard */,
 				0C4A61B62255251F0068D133 /* Assets.xcassets */,
-				0C4A61B82255251F0068D133 /* LaunchScreen.storyboard */,
 				0C4A61BB2255251F0068D133 /* Info.plist */,
 			);
 			path = CustomComponents;
@@ -123,6 +159,94 @@
 				0C4A61D1225525200068D133 /* Info.plist */,
 			);
 			path = CustomComponentsUITests;
+			sourceTree = "<group>";
+		};
+		0C4A61DD22553B9C0068D133 /* ResturantListComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */,
+				0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */,
+				0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */,
+			);
+			path = ResturantListComponent;
+			sourceTree = "<group>";
+		};
+		0CA6396822557C67003C36BE /* WetherForecastComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WetherForecastComponent;
+			sourceTree = "<group>";
+		};
+		0CA6396922557C9E003C36BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A61B82255251F0068D133 /* LaunchScreen.storyboard */,
+				0C4A61B3225525050068D133 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CA6396A22557CC0003C36BE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A61B1225525050068D133 /* RestaurantsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CA6396E22559D50003C36BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6397E2257070C003C36BE /* SwiftData.swift */,
+				0CA6396C22559D45003C36BE /* RestaurantModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CA6397122570022003C36BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CA639732257050A003C36BE /* Constant.swift */,
+				0CA6397222570509003C36BE /* RestAPIFacade.swift */,
+				0CA639742257050A003C36BE /* WebServiceHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CA639802257079E003C36BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CA639812257079E003C36BE /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CA639832257C557003C36BE /* ResModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6396F22559DD6003C36BE /* BaseModel.swift */,
+				0CA639842257C592003C36BE /* ZomatoResModel.swift */,
+			);
+			path = ResModel;
+			sourceTree = "<group>";
+		};
+		0CA63987225839B0003C36BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0CA63988225839E9003C36BE /* RestaurantViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0CA6398A2258429B003C36BE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6397A2257067A003C36BE /* CustomComponents-Bridging-Header.h */,
+				0CA6397B2257067B003C36BE /* TryCatchHandling.h */,
+				0CA6397C2257067C003C36BE /* TryCatchHandling.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +317,7 @@
 				TargetAttributes = {
 					0C4A61AB225525050068D133 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0C4A61BF225525200068D133 = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4A61E322553F480068D133 /* RestaurantTableViewCell.xib in Resources */,
 				0C4A61BA2255251F0068D133 /* LaunchScreen.storyboard in Resources */,
 				0C4A61B72255251F0068D133 /* Assets.xcassets in Resources */,
 				0C4A61B5225525050068D133 /* Main.storyboard in Resources */,
@@ -256,8 +382,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4A61B2225525050068D133 /* ViewController.swift in Sources */,
+				0CA6397022559DD6003C36BE /* BaseModel.swift in Sources */,
+				0CA639852257C592003C36BE /* ZomatoResModel.swift in Sources */,
+				0CA639782257050A003C36BE /* WebServiceHandler.swift in Sources */,
+				0CA6397D2257067C003C36BE /* TryCatchHandling.m in Sources */,
+				0C4A61E222553F480068D133 /* RestaurantTableViewCell.swift in Sources */,
+				0CA63989225839E9003C36BE /* RestaurantViewModel.swift in Sources */,
+				0C4A61DF22553EB00068D133 /* RestaurantTableViewControl.swift in Sources */,
+				0CA639772257050A003C36BE /* Constant.swift in Sources */,
+				0C4A61B2225525050068D133 /* RestaurantsListViewController.swift in Sources */,
+				0CA6397F2257070C003C36BE /* SwiftData.swift in Sources */,
 				0C4A61B0225525050068D133 /* AppDelegate.swift in Sources */,
+				0CA639762257050A003C36BE /* RestAPIFacade.swift in Sources */,
+				0CA6396D22559D45003C36BE /* RestaurantModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomComponents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +578,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.CustomComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomComponents/Models/CustomComponents-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomComponents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.CustomComponents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomComponents/Models/CustomComponents-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

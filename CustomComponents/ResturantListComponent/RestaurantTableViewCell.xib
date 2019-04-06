@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellView" rowHeight="100" id="KGk-i7-Jjw" customClass="RestaurantTableViewCell" customModule="CustomComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="RestaurantTableViewCell" customModule="CustomComponents" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.66666666666667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="Placeholder_Image" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-RE-QbT">
+                        <rect key="frame" x="10" y="10" width="126" height="99.666666666666671"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2l-ph-nfI">
+                        <rect key="frame" x="246" y="17" width="44" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="N2l-ph-nfI" secondAttribute="trailing" constant="30" id="ECu-ub-LUO"/>
+                    <constraint firstItem="fpu-RE-QbT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="F7v-76-XqK"/>
+                    <constraint firstItem="N2l-ph-nfI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="cct-Ta-dUk"/>
+                    <constraint firstAttribute="bottom" secondItem="fpu-RE-QbT" secondAttribute="bottom" constant="10" id="mrZ-in-L9f"/>
+                    <constraint firstItem="fpu-RE-QbT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qSO-h3-EAi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="restaurantImage" destination="fpu-RE-QbT" id="6Ff-fx-Tdm"/>
+                <outlet property="restaurantName" destination="N2l-ph-nfI" id="Gnn-Tp-cUY"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="139.43028485757122"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Placeholder_Image" width="126" height="95"/>
+    </resources>
+</document>
