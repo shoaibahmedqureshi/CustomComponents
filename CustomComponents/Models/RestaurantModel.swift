@@ -14,11 +14,10 @@ class RestaurantModel: BaseModel {
     var type: String = ""
     var location: String = ""
     var rating: Float = 0
-    
+
     
     var lat : Float = 0.0
     var long : Float = 0.0
     var sort : String = ""
     var order : String = ""
-    
 }

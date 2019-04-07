@@ -12,28 +12,33 @@ import UIKit
 
 class RestaurantsListViewController: UIViewController , RestaurantViewModelDelegate  {
   
-    var tableView : RestaurantTableViewControl!
-    @IBOutlet var sView: UIView!
+   @IBOutlet var tableView : RestaurantTableViewControl!
+
     var restaurantViewModel  : RestaurantViewModel?
+    var weatherViewModel  : WeatherViewModel?
     var restaurantList : [Restaurant] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        restaurantViewModel = RestaurantViewModel.init()
-        restaurantViewModel?.getRestaurants()
-        
-        tableView = RestaurantTableViewControl.init()
-        tableView.frame = CGRect.init(x:0 , y: 0 , width: 500, height:500)
-        tableView?.translatesAutoresizingMaskIntoConstraints = false
-        tableView?.setup(tableItems: self.restaurantList, refrencingViewController: self)
-        self.sView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.translatesAutoresizingMaskIntoConstraints = false
-        self.sView.addSubview(tableView)
-        tableView!.reloadData()
-
+        createView()
     }
     
+    func createView() {
+        restaurantViewModel = RestaurantViewModel.init()
+        restaurantViewModel?.getRestaurants()
+        let restaurant = Restaurant.init()
+        restaurant.name = "ssdfsd"
+        restaurantList.append(restaurant)
+        updateUI()
+    }
+    
+    func updateUI() {
+        tableView?.setup(tableItems: self.restaurantList, refrencingViewController: self)
+        tableView.reloadData()
+    }
+    
+    
     func updateRestuarntData(restaurantList: [Restaurant]) {
-        self.restaurantList = restaurantList
+        
     }
     
     

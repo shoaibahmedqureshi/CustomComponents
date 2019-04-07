@@ -10,14 +10,14 @@ import UIKit
 
 class BaseModel: NSObject {
 
-    var dbId: Int64 = 0
-    var previousKey: String = ""
-    var modelId: String = ""
-    var modelDescription: String = ""
-    var status: Bool = false
-    var message: String = ""
-    var errCode: Int = 0
-    var requestID: Int = 0
+      var dbId: Int64 = 0
+      var previousKey: String = ""
+      var modelId: String = ""
+      var modelDescription: String = ""
+      var status: Bool = false
+      var message: String = ""
+      var errCode: Int = 0
+      var requestID: Int = 0
     
     var resCode: Int = 0
     
@@ -28,30 +28,31 @@ class BaseModel: NSObject {
     
     required init(dictionary: Dictionary<String,AnyObject>) {
         super.init()
-        
+
         for (key, value) in dictionary {
-            
+
             let keyName = key as String
             let keyValue: AnyObject = value
-          
-            //let mirror = Mirror(reflecting: self)
-           // print(mirror.children.flatMap { $0.label })
+
+            let mirror = Mirror(reflecting: self)
+            print(mirror.children.compactMap { $0.label })
             if key == "description" {
                 if(!(value is NSNull)) {
                     self.modelDescription = (value as! String)
                 }
             }
- 
+
             else if (self.responds(to:NSSelectorFromString(key) )) {
+
                 print(".....")
                 if(!(value is NSNull)) {
                     self.setValue(keyValue, forKey: keyName)
                 }
             }
           }
-            
+
         }
-        
+    
 
     func setValue(value: AnyObject?, forKey key: String) {
         
@@ -68,23 +69,14 @@ class BaseModel: NSObject {
         else {
             
             if value != nil {
-                
-                /*
-                 do{
-                 try super.setValue(value,forKey: key)
-                 }
-                 catch{
-                 
-                 print(error)
-                 }*/
-                
+
                 TryCatchHandling.`try`({ () -> Void in
                     
                     super.setValue(value,forKey: key)
                     
                 }, catch: { (exception) -> Void in
                     
-                    print("BaseModel->setValue: \(exception?.reason!)")
+                    print("BaseModel->setValue: \(String(describing: exception?.reason!))")
                     
                 }, finally: { () -> Void in
                     

@@ -48,117 +48,21 @@ class WebServiceHandler: NSObject, RestendDelegate {
     func searchRestaurantsByLocation(searchParams:RestaurantModel) {
         var header: Dictionary<String,String> = [:]
         header["user-key"] = USER_KEY
-        let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?lat=\(searchParams.lat)&lon=\(searchParams.lat))&sort=\(searchParams.sort)&order=\(searchParams.order)" , responseType: ZomatoResModel.self, requestMethod: RequestMethod.GET, headers: header, data: nil as Dictionary<String, AnyObject>?, params:nil)
+        let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?lat=\(searchParams.lat)&lon=\(searchParams.long))&sort=\(searchParams.sort)&order=\(searchParams.order)" , responseType: ZomatoResModel.self, requestMethod: RequestMethod.GET, headers: header, data: nil as Dictionary<String, AnyObject>?, params:nil)
         
         restClient.getModel(baseURL: ZOMATO_BASE_URL)
       
     }
+    
+    func getTodaysWeatherByLocation(latitude:Double,longitude:Double) {
+        let appId = "appid=\(OPEN_WEATHER_MAP_APP_ID)"
+        let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?lat=\(latitude)&lon=\(longitude)&\(appId)" , responseType: ToDaysForecastResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil as Dictionary<String, AnyObject>?, params:nil)
+        
+        restClient.getModel(baseURL: WEATHER_TODAY_BASER_URL)
+        
+    }
 
-   
-   
-//   func getAllVideos(fetchSize:Int,type:String) {
-//      
-//         var params: Dictionary<String,String> = [:]
-//         params["fetchsize"] = String(fetchSize)
-//         params["type"] = type
-//         params["sortas"] = "1"
-//         params["sortBy"] = "asc"
-//         params["startIndex"] = "0"
-//      
-//         let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"content/getHomeContentByType" , responseType: HomeContentResModel.self, requestMethod: RequestMethod.POST, headers: nil, data: params as Dictionary<String, AnyObject>?, params:nil)
-//         
-//         
-//         
-//         restClient.getModel()
-//      
-//      
-//   }
-//   
-//   
-//
-//   
-//   func getRecentlyPlayedSongs() {
-//      var params: Dictionary<String,String> = [:]
-//      params["sortas"] = "1"
-//      params["sortBy"] = "asc"
-//      params["startIndex"] = "0"
-//      
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"secure/playlist/getRecentlyPlayed" , responseType: HomeContentResModel.self, requestMethod: RequestMethod.POST, headers: nil, data: params as Dictionary<String, AnyObject>?, params:nil)
-//      
-//      
-//      
-//      restClient.getModel()
-//   }
-//   
-//   func getAllBanners(fetchSize:Int) {
-//      
-//      var params: Dictionary<String,String> = [:]
-//      params["fetchSize"] = String(fetchSize)
-//      params["sortBy"] = "1"
-//      params["sortBy"] = "asc"
-//      params["startIndex"] = "0"
-//      
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"banner/getAllBanner" , responseType: BannerResModel.self, requestMethod: RequestMethod.POST, headers: nil, data: params as Dictionary<String, AnyObject>?, params:nil)
-//      
-//      
-//      
-//      restClient.getModel()
-//      
-//      
-//   }
-//   
-//   func getHomeContent(maxResults:Int,pageToken:String) {
-//      
-//       let maxResults = "maxResults=\(maxResults)"
-//       let pageToken = "pageToken=\(pageToken)"
-//       let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?order=date&\(maxResults)&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&\(pageToken)&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet&type=video" , responseType: YoutubeHomeResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//      
-//   }
-//   
-//   func getPopularContent(maxResults:Int,pageToken:String) {
-//      let maxResults = "maxResults=\(maxResults)"
-//      let pageToken = "pageToken=\(pageToken)"
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?order=viewCount&\(maxResults)&regionCode=PK&q=&type=video&\(pageToken)&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet" , responseType: YoutubeHomeResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//   }
-//   
-//   func getMostLikedContent(maxResults:Int,pageToken:String) {
-//      let maxResults = "maxResults=\(maxResults)"
-//      let pageToken = "pageToken=\(pageToken)"
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"?order=rating&\(maxResults)&myRating=like&q=&\(pageToken)&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet&type=video" , responseType: YoutubeHomeResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//   }
-//   
-//   func getFullTracks(maxResults:Int,pageToken:String) {
-//      let maxResults = "maxResults=\(maxResults)"
-//      let pageToken = "pageToken=\(pageToken)"
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"https://www.googleapis.com/youtube/v3/playlistItems?order=%3CORDER_BY%3E&\(pageToken)&\(maxResults)&playlistId=PLAZ1yCpDGf8bbSjNURXQH1NW65ZH7FUj6&pageToken=&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet" , responseType: YoutubeCategoriesResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//   }
-//   
-//   
-//   func getCategories(maxResults:Int,pageToken:String) {
-//      let maxResults = "maxResults=\(maxResults)"
-//      let pageToken = "pageToken=\(pageToken)"
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"https://www.googleapis.com/youtube/v3/playlists?order=viewCount&\(pageToken)&\(maxResults)&regionCode=PK&q=&type=video&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet&type=video" , responseType: YoutubeCategoriesResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//   }
-//   
-//   func getCategoryDetail(maxResults:Int,playListId:String,pageToken:String) {
-//      let maxResults = "maxResults=\(maxResults)"
-//      let pageToken = "pageToken=\(pageToken)"
-//      let restClient = RestAPIFacade(delegate: self.delegate!, requestType:"https://www.googleapis.com/youtube/v3/playlistItems?\(maxResults)&playlistId=\(playListId)&\(pageToken)&channelId=UCkvPHvcNlWzHEu_z5RKAeEA&key=AIzaSyBv-ZhhhyQx8EvHIGZGtA5I6QMkxMmA57M&part=snippet" , responseType: YoutubeCategoriesResModel.self, requestMethod: RequestMethod.GET, headers: nil, data: nil , params:nil)
-//      
-//      restClient.getModel()
-//   }
-//   
-   
+
    
    
    

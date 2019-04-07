@@ -15,8 +15,15 @@
 		0C4A61C5225525200068D133 /* CustomComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61C4225525200068D133 /* CustomComponentsTests.swift */; };
 		0C4A61D0225525200068D133 /* CustomComponentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61CF225525200068D133 /* CustomComponentsUITests.swift */; };
 		0C4A61DF22553EB00068D133 /* RestaurantTableViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */; };
-		0C4A61E222553F480068D133 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */; };
-		0C4A61E322553F480068D133 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */; };
+		0C87446E22594E7A005AAD81 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C87446D22594E7A005AAD81 /* Slide.xib */; };
+		0C87447022594EB5005AAD81 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87446F22594EB5005AAD81 /* Slide.swift */; };
+		0C8744762259640E005AAD81 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8744722259640E005AAD81 /* GalleryCollectionView.swift */; };
+		0C8744772259640E005AAD81 /* GalleryItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8744732259640E005AAD81 /* GalleryItemCollectionViewCell.xib */; };
+		0C8744782259640E005AAD81 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8744742259640E005AAD81 /* GalleryItem.swift */; };
+		0C8744792259640E005AAD81 /* GalleryItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8744752259640E005AAD81 /* GalleryItemCollectionViewCell.swift */; };
+		0C87447E22599611005AAD81 /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87447D22599611005AAD81 /* WeatherForecastViewController.swift */; };
+		0C8744812259AAF1005AAD81 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87447F2259AAF1005AAD81 /* RestaurantTableViewCell.swift */; };
+		0C8744822259AAF1005AAD81 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8744802259AAF1005AAD81 /* RestaurantTableViewCell.xib */; };
 		0CA6396D22559D45003C36BE /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6396C22559D45003C36BE /* RestaurantModel.swift */; };
 		0CA6397022559DD6003C36BE /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6396F22559DD6003C36BE /* BaseModel.swift */; };
 		0CA639762257050A003C36BE /* RestAPIFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6397222570509003C36BE /* RestAPIFacade.swift */; };
@@ -27,6 +34,10 @@
 		0CA639822257079E003C36BE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA639812257079E003C36BE /* libsqlite3.0.tbd */; };
 		0CA639852257C592003C36BE /* ZomatoResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA639842257C592003C36BE /* ZomatoResModel.swift */; };
 		0CA63989225839E9003C36BE /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA63988225839E9003C36BE /* RestaurantViewModel.swift */; };
+		0CA6398C22585555003C36BE /* WeatherForecastControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6398B22585555003C36BE /* WeatherForecastControl.swift */; };
+		0CA6398E22585589003C36BE /* WeatherForecastControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6398D22585589003C36BE /* WeatherForecastControl.xib */; };
+		0CA639902258815E003C36BE /* FiveDaysForecastResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6398F2258815E003C36BE /* FiveDaysForecastResModel.swift */; };
+		0CA6399222588766003C36BE /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6399122588766003C36BE /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +72,15 @@
 		0C4A61CF225525200068D133 /* CustomComponentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentsUITests.swift; sourceTree = "<group>"; };
 		0C4A61D1225525200068D133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewControl.swift; sourceTree = "<group>"; };
-		0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		0C87446D22594E7A005AAD81 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		0C87446F22594EB5005AAD81 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		0C8744722259640E005AAD81 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		0C8744732259640E005AAD81 /* GalleryItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C8744742259640E005AAD81 /* GalleryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		0C8744752259640E005AAD81 /* GalleryItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C87447D22599611005AAD81 /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
+		0C87447F2259AAF1005AAD81 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		0C8744802259AAF1005AAD81 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
 		0CA6396C22559D45003C36BE /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
 		0CA6396F22559DD6003C36BE /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		0CA6397222570509003C36BE /* RestAPIFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIFacade.swift; sourceTree = "<group>"; };
@@ -75,6 +93,10 @@
 		0CA639812257079E003C36BE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		0CA639842257C592003C36BE /* ZomatoResModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomatoResModel.swift; sourceTree = "<group>"; };
 		0CA63988225839E9003C36BE /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		0CA6398B22585555003C36BE /* WeatherForecastControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastControl.swift; sourceTree = "<group>"; };
+		0CA6398D22585589003C36BE /* WeatherForecastControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherForecastControl.xib; sourceTree = "<group>"; };
+		0CA6398F2258815E003C36BE /* FiveDaysForecastResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDaysForecastResModel.swift; sourceTree = "<group>"; };
+		0CA6399122588766003C36BE /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +149,7 @@
 		0C4A61AE225525050068D133 /* CustomComponents */ = {
 			isa = PBXGroup;
 			children = (
+				0C87447122596384005AAD81 /* FiveDaysForecastControl */,
 				0CA6398A2258429B003C36BE /* Utility */,
 				0CA63987225839B0003C36BE /* ViewModels */,
 				0CA639832257C557003C36BE /* ResModel */,
@@ -165,15 +188,30 @@
 			isa = PBXGroup;
 			children = (
 				0C4A61DE22553EB00068D133 /* RestaurantTableViewControl.swift */,
-				0C4A61E022553F480068D133 /* RestaurantTableViewCell.swift */,
-				0C4A61E122553F480068D133 /* RestaurantTableViewCell.xib */,
+				0C87447F2259AAF1005AAD81 /* RestaurantTableViewCell.swift */,
+				0C8744802259AAF1005AAD81 /* RestaurantTableViewCell.xib */,
 			);
 			path = ResturantListComponent;
+			sourceTree = "<group>";
+		};
+		0C87447122596384005AAD81 /* FiveDaysForecastControl */ = {
+			isa = PBXGroup;
+			children = (
+				0C8744722259640E005AAD81 /* GalleryCollectionView.swift */,
+				0C8744742259640E005AAD81 /* GalleryItem.swift */,
+				0C8744752259640E005AAD81 /* GalleryItemCollectionViewCell.swift */,
+				0C8744732259640E005AAD81 /* GalleryItemCollectionViewCell.xib */,
+			);
+			path = FiveDaysForecastControl;
 			sourceTree = "<group>";
 		};
 		0CA6396822557C67003C36BE /* WetherForecastComponent */ = {
 			isa = PBXGroup;
 			children = (
+				0CA6398B22585555003C36BE /* WeatherForecastControl.swift */,
+				0CA6398D22585589003C36BE /* WeatherForecastControl.xib */,
+				0C87446D22594E7A005AAD81 /* Slide.xib */,
+				0C87446F22594EB5005AAD81 /* Slide.swift */,
 			);
 			path = WetherForecastComponent;
 			sourceTree = "<group>";
@@ -191,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				0C4A61B1225525050068D133 /* RestaurantsListViewController.swift */,
+				0C87447D22599611005AAD81 /* WeatherForecastViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,7 +237,7 @@
 		0CA6396E22559D50003C36BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0CA6397E2257070C003C36BE /* SwiftData.swift */,
+				0CA6397A2257067A003C36BE /* CustomComponents-Bridging-Header.h */,
 				0CA6396C22559D45003C36BE /* RestaurantModel.swift */,
 			);
 			path = Models;
@@ -208,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA639732257050A003C36BE /* Constant.swift */,
+				0CA6397E2257070C003C36BE /* SwiftData.swift */,
 				0CA6397222570509003C36BE /* RestAPIFacade.swift */,
 				0CA639742257050A003C36BE /* WebServiceHandler.swift */,
 			);
@@ -227,6 +267,7 @@
 			children = (
 				0CA6396F22559DD6003C36BE /* BaseModel.swift */,
 				0CA639842257C592003C36BE /* ZomatoResModel.swift */,
+				0CA6398F2258815E003C36BE /* FiveDaysForecastResModel.swift */,
 			);
 			path = ResModel;
 			sourceTree = "<group>";
@@ -235,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA63988225839E9003C36BE /* RestaurantViewModel.swift */,
+				0CA6399122588766003C36BE /* WeatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -242,7 +284,6 @@
 		0CA6398A2258429B003C36BE /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				0CA6397A2257067A003C36BE /* CustomComponents-Bridging-Header.h */,
 				0CA6397B2257067B003C36BE /* TryCatchHandling.h */,
 				0CA6397C2257067C003C36BE /* TryCatchHandling.m */,
 			);
@@ -354,10 +395,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4A61E322553F480068D133 /* RestaurantTableViewCell.xib in Resources */,
+				0CA6398E22585589003C36BE /* WeatherForecastControl.xib in Resources */,
+				0C8744772259640E005AAD81 /* GalleryItemCollectionViewCell.xib in Resources */,
 				0C4A61BA2255251F0068D133 /* LaunchScreen.storyboard in Resources */,
 				0C4A61B72255251F0068D133 /* Assets.xcassets in Resources */,
 				0C4A61B5225525050068D133 /* Main.storyboard in Resources */,
+				0C8744822259AAF1005AAD81 /* RestaurantTableViewCell.xib in Resources */,
+				0C87446E22594E7A005AAD81 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,18 +427,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CA6397022559DD6003C36BE /* BaseModel.swift in Sources */,
+				0C8744782259640E005AAD81 /* GalleryItem.swift in Sources */,
 				0CA639852257C592003C36BE /* ZomatoResModel.swift in Sources */,
 				0CA639782257050A003C36BE /* WebServiceHandler.swift in Sources */,
+				0C8744792259640E005AAD81 /* GalleryItemCollectionViewCell.swift in Sources */,
+				0C8744762259640E005AAD81 /* GalleryCollectionView.swift in Sources */,
 				0CA6397D2257067C003C36BE /* TryCatchHandling.m in Sources */,
-				0C4A61E222553F480068D133 /* RestaurantTableViewCell.swift in Sources */,
+				0CA639902258815E003C36BE /* FiveDaysForecastResModel.swift in Sources */,
 				0CA63989225839E9003C36BE /* RestaurantViewModel.swift in Sources */,
 				0C4A61DF22553EB00068D133 /* RestaurantTableViewControl.swift in Sources */,
+				0C87447022594EB5005AAD81 /* Slide.swift in Sources */,
 				0CA639772257050A003C36BE /* Constant.swift in Sources */,
 				0C4A61B2225525050068D133 /* RestaurantsListViewController.swift in Sources */,
+				0CA6398C22585555003C36BE /* WeatherForecastControl.swift in Sources */,
 				0CA6397F2257070C003C36BE /* SwiftData.swift in Sources */,
 				0C4A61B0225525050068D133 /* AppDelegate.swift in Sources */,
+				0CA6399222588766003C36BE /* WeatherViewModel.swift in Sources */,
 				0CA639762257050A003C36BE /* RestAPIFacade.swift in Sources */,
 				0CA6396D22559D45003C36BE /* RestaurantModel.swift in Sources */,
+				0C8744812259AAF1005AAD81 /* RestaurantTableViewCell.swift in Sources */,
+				0C87447E22599611005AAD81 /* WeatherForecastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

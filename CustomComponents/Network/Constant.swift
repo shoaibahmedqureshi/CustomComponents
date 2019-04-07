@@ -13,6 +13,9 @@ import Foundation
 let USER_KEY = "50a184163c74fd33ed9d4070bdfbc83b"
 
 let ZOMATO_BASE_URL = "https://developers.zomato.com/api/v2.1/search"
+let WEATHER_FORECAST_BASER_URL = "https://samples.openweathermap.org/data/2.5/forecast"
+let WEATHER_TODAY_BASER_URL = "https://samples.openweathermap.org/data/2.5/weather"
+let OPEN_WEATHER_MAP_APP_ID = "b6907d289e10d714a6e88b30761fae22"
 
 
 

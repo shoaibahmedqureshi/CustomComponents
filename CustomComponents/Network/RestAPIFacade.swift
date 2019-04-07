@@ -254,7 +254,7 @@ class RestAPIFacade : NSObject
                     
                     let json:Any? = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)
                     
-                    print("response: \n \(json)")
+                    print("response: \n \(String(describing: json))")
                     
                     if json is NSDictionary
                     {

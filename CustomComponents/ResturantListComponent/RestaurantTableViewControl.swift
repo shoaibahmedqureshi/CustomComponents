@@ -12,7 +12,7 @@ protocol RestaurantTableViewControlDelegate {
   func didClickTableItem(index:Int,selectedCategoryType:String)
 }
 
-let REUSABLEIDENTIFIER : String = "TableCellView"
+let REUSABLEIDENTIFIER : String = "RestaurantTableViewCell"
 let NIBNAME = "RestaurantTableViewCell"
 class RestaurantTableViewControl: UITableView,UITableViewDelegate,UITableViewDataSource {
     
@@ -33,6 +33,7 @@ class RestaurantTableViewControl: UITableView,UITableViewDelegate,UITableViewDat
     }
     
     func initilize() {
+        self.register(RestaurantTableViewCell.self, forCellReuseIdentifier:REUSABLEIDENTIFIER)
         let nib = UINib.init(nibName: NIBNAME, bundle: nil)
         self.register(nib, forCellReuseIdentifier:REUSABLEIDENTIFIER)
         self.translatesAutoresizingMaskIntoConstraints = false

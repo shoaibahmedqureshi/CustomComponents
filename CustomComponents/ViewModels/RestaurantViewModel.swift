@@ -13,7 +13,7 @@ protocol RestaurantViewModelDelegate {
 }
 
 class RestaurantViewModel : NSObject, RestendDelegate {
-    
+ 
     
     var items  : [RestaurantModel] = []
     var delegate : RestaurantViewModelDelegate? = nil
@@ -35,11 +35,7 @@ class RestaurantViewModel : NSObject, RestendDelegate {
         if baseModel is ZomatoResModel {
             let zomatoResModel = baseModel as! ZomatoResModel
             let restaurants = zomatoResModel.restaurantList
-            //print("image : \(res[0].featured_image) name : \(res[0].name) ,city \(String(describing: res[0].locationDetails?.city))")
             delegate?.updateRestuarntData(restaurantList:restaurants)
-            
-
-            
         }
     }
     

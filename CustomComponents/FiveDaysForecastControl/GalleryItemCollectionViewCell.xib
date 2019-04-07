@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryItemCollectionViewCell" id="gTV-IL-0wX" customClass="GalleryItemCollectionViewCell" customModule="CustomComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BX0-hd-FVm">
+                        <rect key="frame" x="12" y="0.0" width="26.5" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="1ry-EL-yde">
+                        <rect key="frame" x="0.0" y="40" width="50" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-fS-aQ3">
+                        <rect key="frame" x="0.0" y="128" width="32.5" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-rT-zIF">
+                        <rect key="frame" x="22.5" y="128" width="32.5" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1ry-EL-yde" firstAttribute="top" secondItem="BX0-hd-FVm" secondAttribute="bottom" id="1z1-4u-6Qe"/>
+                <constraint firstAttribute="bottom" secondItem="1ry-EL-yde" secondAttribute="bottom" constant="20" id="8Ik-78-DJE"/>
+                <constraint firstItem="eOW-rT-zIF" firstAttribute="leading" secondItem="bXQ-fS-aQ3" secondAttribute="trailing" constant="-10" id="AJo-kg-Sgj"/>
+                <constraint firstAttribute="trailing" secondItem="1ry-EL-yde" secondAttribute="trailing" id="EbS-bg-3RM"/>
+                <constraint firstItem="1ry-EL-yde" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FRM-15-yfa"/>
+                <constraint firstItem="BX0-hd-FVm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P4O-1s-TmY"/>
+                <constraint firstItem="eOW-rT-zIF" firstAttribute="width" secondItem="bXQ-fS-aQ3" secondAttribute="width" id="YRb-wu-tQp"/>
+                <constraint firstItem="eOW-rT-zIF" firstAttribute="centerY" secondItem="bXQ-fS-aQ3" secondAttribute="centerY" id="apM-xd-nhy"/>
+                <constraint firstAttribute="trailing" secondItem="eOW-rT-zIF" secondAttribute="trailing" constant="-5" id="b3L-hF-f0s"/>
+                <constraint firstItem="bXQ-fS-aQ3" firstAttribute="top" secondItem="1ry-EL-yde" secondAttribute="bottom" constant="8" id="fT7-X8-HyW"/>
+                <constraint firstItem="1ry-EL-yde" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="guo-z8-Pie"/>
+                <constraint firstItem="bXQ-fS-aQ3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tIm-QG-4yi"/>
+                <constraint firstItem="BX0-hd-FVm" firstAttribute="centerX" secondItem="1ry-EL-yde" secondAttribute="centerX" id="wR8-6b-xm6"/>
+            </constraints>
+            <size key="customSize" width="117" height="179"/>
+            <point key="canvasLocation" x="38" y="63"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sun" width="133" height="102"/>
+    </resources>
+</document>
